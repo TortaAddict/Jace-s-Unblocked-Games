@@ -1,0 +1,121 @@
+* {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+}
+
+body {  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    background-color: #f4f4f4;  
+    color: #333;  
+    transition: background-color 0.3s, color 0.3s;  
+}
+
+header {  
+    background-color: #2c3e50;  
+    color: white;  
+    padding: 1rem;  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+}
+
+nav button, .category-buttons button {  
+    margin: 0 5px;  
+    padding: 8px 15px;  
+    background-color: #3498db;  
+    color: white;  
+    border: none;  
+    border-radius: 4px;  
+    cursor: pointer;  
+    transition: background-color 0.2s;  
+}
+
+nav button:hover, .category-buttons button:hover {  
+    background-color: #2980b9;  
+}
+
+#game-search {  
+    padding: 8px;  
+    border-radius: 4px;  
+    border: 1px solid #ccc;  
+}
+
+#customize-panel {  
+    background-color: #ecf0f1;  
+    padding: 1rem;  
+    margin: 1rem;  
+    border-radius: 8px;  
+}
+
+#games-grid {  
+    display: grid;  
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  
+    gap: 20px;  
+    padding: 1rem;  
+}
+
+.game-card {  
+    background-color: white;  
+    border-radius: 8px;  
+    padding: 1rem;  
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);  
+    transition: transform 0.2s;  
+}
+
+.game-card:hover {  
+    transform: scale(1.03);  
+}
+
+.game-title {  
+    font-weight: bold;  
+    margin-bottom: 0.5rem;  
+}
+
+.game-actions button {  
+    margin-top: 10px;  
+    padding: 6px 12px;  
+    background-color: #27ae60;  
+    color: white;  
+    border: none;  
+    border-radius: 4px;  
+    cursor: pointer;  
+}
+
+footer {  
+    text-align: center;  
+    padding: 1rem;  
+    background-color: #2c3e50;  
+    color: white;  
+    margin-top: 2rem;  
+}
+
+/* Stealth Mode */  
+.stealth-mode {  
+    background-color: #ffffff !important;  
+    color: #000000 !important;  
+}
+
+.stealth-mode header {  
+    background-color: #0056b3 !important;  
+}
+
+.stealth-mode .game-card {  
+    border: 1px solid #ccc;  
+    box-shadow: none;  
+}
+
+/* Layout Variations */  
+.grid-layout {  
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  
+}
+
+.list-layout .game-card {  
+    width: 95%;  
+    margin: 10px auto;  
+}
+
+.compact-layout .game-card {  
+    padding: 0.5rem;  
+    margin: 5px;  
+}  
